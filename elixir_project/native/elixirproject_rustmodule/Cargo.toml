@@ -1,0 +1,14 @@
+[package]
+name = "elixirproject_rustmodule"
+version = "0.1.0"
+authors = []
+edition = "2021"
+
+[lib]
+name = "elixirproject_rustmodule"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+rustler = "0.32.1"
+rust_path_dependency = { path = "../../../rust_path_dependency/" }
